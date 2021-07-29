@@ -1,0 +1,7 @@
+$positions : center,right,left;
+
+@each $pos in $positions {
+    .text-#{$pos}{
+        text-align: #{$pos};
+    }
+}

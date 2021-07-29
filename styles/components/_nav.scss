@@ -1,0 +1,89 @@
+@use '../abstract' as var;
+.nav {
+  &bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &-btn {
+    display: inline-block;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    color: var.$app-secondary;
+    width: 54px;
+    line-height: 1;
+    padding: 8px;
+    transition: transform 1000ms ease-in-out;
+
+    .bar {
+      display: block;
+      height: 2px;
+      margin-left: auto;
+      background-color: currentColor;
+      transform-origin: center;
+      &:nth-of-type(1) {
+        width: 100%;
+        transition: transform 550ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+      &:nth-of-type(2) {
+        width: 80%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        transition: transform 550ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      &:nth-of-type(3) {
+        transition: transform 550ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        width: 60%;
+      }
+    }
+
+    &.open {
+      position: fixed;
+      z-index: 90;
+      right: 10px;
+      top: 10px;
+      //   color: var.$white;
+      .bar {
+        &:nth-of-type(1) {
+          width: 50%;
+          transform: rotate(-45deg) translate(-5px, -0px);
+        }
+        &:nth-of-type(2) {
+          width: 100%;
+          transform: rotate(45deg);
+        }
+        &:nth-of-type(3) {
+          width: 50%;
+          transform: rotate(-45deg) translate(-10px, -13px);
+        }
+      }
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    display: inline-block;
+  }
+  &-aside {
+    position: fixed;
+    background-color: var.$white;
+    top: 0;
+    right: -100%;
+    width: 600px;
+    max-width: 100%;
+    bottom: 0;
+    transition: right 500ms ease-in-out;
+    z-index: 88;
+    box-shadow: 0px 0px 10px rgba(var.$black, 0.5);
+    transform: skewX(-7.5deg);
+    padding: 40px;
+    &.open {
+      display: block;
+      right: -200px;
+      .navbar {
+        transform: skewX(7.5deg);
+      }
+    }
+  }
+}

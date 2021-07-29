@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="33" height="41" viewBox="0 0 33 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M16.6646 0.625534L0.678696 5.9388L16.6646 40.8112L32.6506 5.9388L16.6646 0.625534ZM3.01232 6.90126L16.6646 2.36586L30.3829 6.92762L16.6646 36.856V12.2541L3.01232 6.90126Z"
+        fill="url(#paint0_linear)" />
+    <defs>
+        <linearGradient id="paint0_linear" x1="-1.37476" y1="38.7578" x2="34.7041" y2="2.67899"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0.05" stop-color="#DEBB54" />
+            <stop offset="0.95" stop-color="#95771D" />
+        </linearGradient>
+    </defs>
+</svg>

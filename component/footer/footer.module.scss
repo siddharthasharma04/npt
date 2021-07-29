@@ -1,0 +1,15 @@
+@use '../../styles/abstract' as var;
+.inner{
+    background-color: #212121;
+    color: #fff;
+}
+.top{
+    border-bottom: 1px solid var.$dark-grey;
+    padding:10px
+}
+.bottom{
+    padding:10px;
+    *{
+        margin: 0;
+    }
+}

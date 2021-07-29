@@ -1,0 +1,43 @@
+.clock{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: #fff6db;
+    margin: 40px auto 0;
+    border-radius: 50%;
+    border: 8px solid #bb9a3a;
+    box-shadow: 0 0 8px 3px rgba($color: #212121, $alpha: 0.4) inset;
+    img{
+        position: absolute;
+    top: calc(50% - 65px);
+    left: calc(50% - 60px);
+    width: 120px;
+    opacity: 50%;
+    }
+    .min,.sec{
+        width: 8px;
+        background: #bb9a3a;
+        border-radius: 8px;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 4px);
+        transform-origin: top;
+        z-index: 5;
+    }
+    .min{
+        height: 60px;
+        animation: spin 30s linear infinite;
+    }
+    .sec{
+        height: 80px;
+        animation: spin 6s linear infinite;
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(-180deg)
+        }
+        100% {
+            transform: rotate(180deg)
+        }
+    }
+}

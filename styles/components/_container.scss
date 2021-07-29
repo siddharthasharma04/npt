@@ -1,0 +1,22 @@
+@use '../abstract' as var;
+
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 80px 1fr auto;
+    height: 100%;
+}
+.container{
+    padding: 0 1.5rem;
+    max-width: 1328px;
+    margin: 0 auto;
+    @include var.media-breakpoint-up(xl){
+        max-width: 1440px;
+    }
+}
+
+#__next{
+display: block;
+height: 100%;
+width: 100%;
+}

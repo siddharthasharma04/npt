@@ -1,0 +1,12 @@
+@use '../abstract' as var;
+header{
+    width: 100%;
+    display: block;
+    box-shadow: 2px 2px 10px rgba(var.$grey, $alpha: 0.5);
+    padding: 0.5rem 0.5rem 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

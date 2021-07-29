@@ -1,0 +1,14 @@
+.row{
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+
+    [class*="col-"]{
+        flex-basis: 100%;
+    }
+    @for $col from 1 to 12 {
+        .col-#{$col}{
+            max-width: #{(100 * $col)/12} + "%";
+        }
+    }
+}
